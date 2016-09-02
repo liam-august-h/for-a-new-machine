@@ -1,0 +1,14 @@
+#!/bin/bash
+
+find . \( \
+    -name "*.c" -or \
+    -name "*.cc" -or \
+    -name "*.cpp" -or \
+    -name "*.h" -or \
+    -name "*.hpp" -or \
+    -iname "*.asm" -or \
+    -name "*.java" -or \
+    -name "*.sh" \
+    \) -and \( -type f \) > all_source_files
+
+cscope -bkqCi all_source_files

@@ -2,9 +2,11 @@
 
 cd ~
 mkdir bin
+cd ~
 
-# ack-grep
-sudo apt-get install ack-grep
+# necessary packages:
+# ack-grep, vim, cscope, ctags
+sudo apt-get install ack-grep vim cscope exuberant-ctags openjdk-8-jdk
 
 # FIXME android-ndk, android-sdk, 
 
