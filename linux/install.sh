@@ -5,24 +5,17 @@ mkdir bin
 cd ~
 
 # necessary packages:
-# ack-grep, vim, cscope, ctags
-sudo apt-get install ack-grep vim cscope exuberant-ctags openjdk-8-jdk
+# ack-grep, vim, cscope, ctags, colordiff, tmux, autojump zeal ibus-pinyin openjdk-8-jdk
+sudo apt install ack-grep vim cscope exuberant-ctags  colordiff tmux\
+     autojump zeal ibus-pinyin gawk
+
+sudo apt-get install git-core gnupg flex bison gperf build-essential \
+     zip curl zlib1g-dev gcc-multilib g++-multilib libc6-dev-i386 \
+     lib32ncurses5-dev x11proto-core-dev libx11-dev lib32z-dev ccache \
+     libgl1-mesa-dev libxml2-utils xsltproc unzip
 
 # FIXME android-ndk, android-sdk, 
 
-# autojump
-# FIXME depends on python
-cd ~/bin
-git clone git://github.com/joelthelion/autojump.git
-cd autojump
-./install.py
-cd ~
-
-# tmux
-cd ~/bin
-git clone https://github.com/tmux/tmux.git
-cd tmux
-sh autogen.sh
-./configure && make
-sudo make install
-cd ~
+# disable nautilus automount and automount-open
+#gsettings set org.gnome.desktop.media-handling automount false
+gsettings set org.gnome.desktop.media-handling automount-open false
