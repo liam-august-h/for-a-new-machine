@@ -1,0 +1,8 @@
+[core]
+	editor = vim
+[color]
+	ui = auto
+[http]
+	proxy = http://child-prc.intel.com:913
+[https]
+	proxy = http://child-prc.intel.com:913
