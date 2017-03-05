@@ -15,4 +15,4 @@ sudo apt-get install libgtk2.0-dev
 # optimization
 sudo apt-get install libatlas-base-dev gfortran
 
-ln -s /usr/include/libv4l1-videodev.h /usr/include/linux/videodev.h
+sudo ln -s /usr/include/libv4l1-videodev.h /usr/include/linux/videodev.h
