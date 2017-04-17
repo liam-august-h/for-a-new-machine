@@ -6,8 +6,8 @@ cd ~
 
 # necessary packages:
 # ack-grep, vim, cscope, ctags, colordiff, tmux, autojump zeal ibus-pinyin openjdk-8-jdk
-sudo apt-get install ack-grep vim cscope exuberant-ctags  colordiff tmux\
-     autojump gawk zip curl unzip doxygen graphviz doxygen-gui
+sudo apt-get install -y ack-grep vim cscope exuberant-ctags colordiff tmux\
+     autojump gawk zip curl unzip doxygen graphviz doxygen-gui openjdk-8-jdk
 
 echo "source /usr/share/autojump/autojump.sh" >> ~/.bashrc
 
